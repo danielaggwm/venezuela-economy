@@ -18,7 +18,7 @@ function generateCashImages() {
         for (let col = 0; col < 10; col++) {
             const cashType = cashTypes[col % cashTypes.length]; // Cycle through 1-4
             const img = document.createElement('img');
-            img.src = `/Illustrations/${cashType}`;
+            img.src = `Illustrations/${cashType}`;
             img.alt = 'Bolivar';
             img.style.width = '80px';
             rowDiv.appendChild(img);
@@ -42,7 +42,7 @@ scroller
         if (step === "1") {
             cashWrapper.style.display = 'flex';
             // cashContainer.style.display = 'none';
-            document.querySelector("#bolivar-image").src = "/Illustrations/Cash_1.png";
+            document.querySelector("#bolivar-image").src = "Illustrations/Cash_1.png";
             document.querySelector("#extra-cash").innerHTML = "";
             cashWrapper.style.opacity = 1;
 
@@ -51,11 +51,11 @@ scroller
         if (step === "2") {
             cashWrapper.style.display = 'flex';
             // cashContainer.style.display = 'none';
-            document.querySelector("#bolivar-image").src = "/Illustrations/Cash_1.png";
+            document.querySelector("#bolivar-image").src = "Illustrations/Cash_1.png";
             document.querySelector("#extra-cash").innerHTML = `
-                <img src="/Illustrations/Cash_2.png" />
-                <img src="/Illustrations/Cash_3.png" />
-                <img src="/Illustrations/Cash_4.png" />
+                <img src="Illustrations/Cash_2.png" />
+                <img src="Illustrations/Cash_3.png" />
+                <img src="Illustrations/Cash_4.png" />
             `;
             cashWrapper.style.opacity = 1;
 
@@ -123,7 +123,7 @@ profileScroller
 
         if (profileRole === role) {
           profile.classList.add("active");
-          img.src = `/Illustrations/profiles/${role}_${index}.png`;
+          img.src = `Illustrations/profiles/${role}_${index}.png`;
         } else {
           profile.classList.remove("active");
         }
