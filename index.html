@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venezuela's Downfall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="https://unpkg.com/scrollama"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="store.js" defer></script> 
+    <script src="script.js" defer></script> 
+
+</head>
+<body>
+    <div class="intro-slide">
+        <h1>the economic downfall of Venezuela</h1>
+        <p>Venezuela was once boasted Latin America's richest economy - 
+            boosted by the biggest oil reserves on the planet. Today, the
+            country's own currency is so unimportant that most transactions are conducted in US dollars
+        </p>
+    </div>
+    <div class="intro-slide">
+        <h1>the national coin is near worthless</h1>
+        <p>due to the hyperinflation, the official currency, the "Bolivar", has completely lost its value over time</p>
+    </div>
+
+    <div class="intro-scrolly">
+        <p>let's take a trip through its history...</p>
+     </div>
+    
+
+    <div id="scrolly">
+        <div class="sticky-graphic">
+            <div id="history-sticky">
+                <div id="cash-wrapper">
+                    <img id="bolivar-image" src="/Illustrations/Cash_1.png" alt="Bolivar">
+                    <div id="extra-cash"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="scrolly-text">
+            <div class="step" data-step="1">
+                <p>in 2002, one US dollar could buy <span>one</span> Bolivar</p>
+            </div>
+            <div class="step" data-step="2">
+                <p>10 years later, in 2012, it could buy <span>four</span> Bolivares</p>
+            </div>
+            <div class="step" data-step="3" id="final-step">
+                <p>by the end of 2015, one US dollar could buy <span>nine hundred</span> Bolivares</p>
+            </div>
+        </div>
+        <!-- Scrollable container for the 900 cash images -->
+    </div>
+
+    <div id="cash-scroll-container"></div>
+
+    <div class="intro-slide">
+        <p>now let's skip forward to today...</p>
+        <br>
+        <p>one US dollar could buy over <span>3.6 billion</span> Bolivares</p>
+        <br>
+        <p>let's put that into perspective</p>
+    </div>
+
+    <div class="examples">
+        <div class="empire-state">
+            <img src="Illustrations/empire state.png" alt="">
+            <p>if stacked up in single bills, it would have the height of <span>1,000</span> Empire State buildings</p>
+        </div>
+        <div class="central-park">
+            <img src="Illustrations/central park.png" alt="">
+            <p>or the area of <span>11</span> Central Parks</p>
+        </div>
+        <div class="earth">
+            <p>if placed end to end, you could take <span>44 trips</span> around the World</p>
+            <img src="Illustrations/earth.png" alt="">
+        </div>
+        <div class="elephant">
+            <img src="Illustrations/elephant.png" alt="">
+            <p>and weight as much as <span>7</span> adult elephants</p>
+        </div>
+    </div>
+      
+    <div class="intro-slide">
+        <p>since it is incomprehensible for anyone to carry that amount of cash, the government has introduced new currencies over the years</p>
+        <div class="bolivar-table">
+            <img src="Illustrations/table.png" alt="">
+        </div>
+    </div>
+
+    <div class="intro-slide">
+        <p>now do you understand why Venezuela doesn't use its own currency?
+            <br>almost every transaction is now done in <span>US dollars</span>
+        </p>
+    </div>
+    
+    <div id="profile-scrolly">
+        <div class="intro-profiles">
+            <h1>what does it mean to earn a living in Venezuela today?</h1>
+            <p>meet four Venezuelans. same country, same currency — but their stories, and salaries, are worlds apart</p>
+        </div>
+        <div class="sticky-graphic">
+          <div class="salary-intro">
+            <div class="salary-profiles">
+              <div class="profile" data-role="executive">
+                <img src="/Illustrations/profiles/executive_1.png" alt="Executive">
+                <div class="label">Executive $458.20</div>
+              </div>
+              <div class="profile" data-role="professional">
+                <img src="/Illustrations/profiles/professional_1.png" alt="Professional">
+                <div class="label">Professional $309.10</div>
+              </div>
+              <div class="profile" data-role="operator">
+                <img src="/Illustrations/profiles/operator_1.png" alt="Operator">
+                <div class="label">Operator $195.10</div>
+              </div>
+              <div class="profile" data-role="minimum">
+                <img src="/Illustrations/profiles/minimum_1.png" alt="Minimum Wage">
+                <div class="label">Minimum Wage $3.50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="scrolly-text">
+          <!-- Each role has 3 steps -->
+          <div class="step" data-role="executive" data-index="1">Meet Oscar, he is the CEO of a wood manufacturer.</div>
+          <div class="step" data-role="executive" data-index="2">Oscar was passed down his business from his father.</div>
+          <div class="step" data-role="executive" data-index="3">He makes an Executive salary: $458.20/month.</div>
+      
+          <div class="step" data-role="professional" data-index="1">Meet Maria, she loves her job as an Accountant.</div>
+          <div class="step" data-role="professional" data-index="2">She handles finances for a logistics company.</div>
+          <div class="step" data-role="professional" data-index="3">Maria earns $309.10/month.</div>
+      
+          <div class="step" data-role="operator" data-index="1">This is Ana, a heavy machine operator.</div>
+          <div class="step" data-role="operator" data-index="2">Ana works long shifts in a factory.</div>
+          <div class="step" data-role="operator" data-index="3">She makes $195.10/month.</div>
+      
+          <div class="step" data-role="minimum" data-index="1">Pedro sells coffee on the street to support his family.</div>
+          <div class="step" data-role="minimum" data-index="2">He works 6 days a week, rain or shine.</div>
+          <div class="step" data-role="minimum" data-index="3">His monthly income is $3.50.</div>
+          <div class="step" data-role="minimum" data-index="4" id="pedro-step">His monthly income is $3.50.</div>
+
+        </div>
+    </div>
+      
+
+    <div class="intro-slide">
+        <h1>so, can they even afford to live?</h1>
+        <p>what is the cost of living in Venezuela? can people survive this financial chaos?</p>
+        <p>explore Venezuela's economy by going shopping with the average monthly income of a Venezuelan</p>
+
+        <select id="salary-select" name="salary">
+            <option value="" disabled selected>Select your salary</option>
+            <option value="executive">Executive</option>
+            <option value="professional">Professional</option>
+            <option value="operator">Operator</option>
+            <option value="minimum">Minimum Wage</option>
+        </select>
+    </div>
+
+    <div id="online-store">
+        <div class="online-store-container">
+            <div class="receipt">
+                <p>please select a salary above to start shopping</p>
+            </div>
+            <div class="store-container">
+                <div id="food">
+                    <div class="category-header">
+                        <h1>food</h1>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                    </div>
+                    </div>
+                </div>
+                <div id="hygiene">
+                    <div class="category-header">
+                        <h1>hygiene</h1>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                        </div>
+                    </div>
+                </div>
+                <div id="housing">
+                    <div class="category-header">
+                        <h1>housing</h1>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-slide">
+        <h1>most Venezuelans will struggle <br>to afford that shopping cart</h1>
+        <p>and, most live in homes passed down through generations, as they are unable to afford renting or buying their own...</p>
+    </div>
+</body>
+</html>
