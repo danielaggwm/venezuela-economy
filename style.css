@@ -145,10 +145,10 @@ body {
     width: 50px;
 }
 
-
 span {
     font-weight: 600;
 }
+
 
 .examples p {
     font-family: "Red Hat Display", sans-serif;
@@ -159,6 +159,30 @@ span {
     font-size: 1.6rem;
 }
 
+@media (max-width: 400px) {
+    .examples p {
+        font-size: 1.1rem;
+    }
+
+    .intro-scrolly p {
+        font-size: 1.1rem;
+    }
+    
+    .intro-slide p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    .intro-slide h1 {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .step p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+}
 
 .empire-state {
     display: flex;
@@ -706,3 +730,125 @@ span {
     width: 60%;
     text-align: center;
 }
+
+@media (max-width: 400px) {
+    .bolivar-table {
+        width: 80%;
+    }
+
+    .intro-profiles h1 {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .intro-profiles p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .salary-profiles {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .profile {
+      width: 30%; 
+    }
+
+    #profile-scrolly .step {
+        font-size: 1.1rem !important;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .salary-profiles.final .profile {
+        width: 148px;
+      }
+      
+    .salary-profiles.final {
+        gap: 0.6rem;  
+    }
+
+    .profile .label {
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .earth img {
+        width: 40vw; 
+        height: auto;
+    }
+    
+    .earth p {
+        width: 40%;
+        padding-top: 1rem;
+    }
+
+    .online-store-container {
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+    }
+    
+    .product-card {
+        margin-right: 5px;
+    }
+
+    .store-container h1 {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .receipt p {
+        font-size: 0.9rem;
+    }
+
+    .receipt-category {
+        font-size: 0.9rem;
+    }
+
+    .receipt-line {
+        font-size: 0.8rem;
+    }
+
+    .receipt-total {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .online-store-container {
+      flex-direction: column;
+    }
+  
+    .receipt {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .carousel-container {
+      width: 100%;
+      z-index: 10;
+      margin-left: 1rem;
+    }
+
+    #online-store {
+        display: flex;
+        justify-content: center;
+    }
+
+    .store-container {
+        width: 100vw;
+        overflow-x: scroll;
+        padding-left: 0rem;
+    }
+
+  }
+  

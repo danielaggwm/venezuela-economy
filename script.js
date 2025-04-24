@@ -1,32 +1,67 @@
 const scroller = scrollama();
 
+// function generateCashImages() {
+//     const cashContainer = document.querySelector('#cash-scroll-container');
+//     cashContainer.innerHTML = '';
+    
+//     const cashTypes = ['Cash_1.png', 'Cash_2.png', 'Cash_3.png', 'Cash_4.png'];
+    
+//     // Create 90 rows
+//     for (let row = 0; row < 90; row++) {
+//         const rowDiv = document.createElement('div');
+//         rowDiv.className = 'cash-row';
+//         rowDiv.style.display = 'flex';
+//         rowDiv.style.justifyContent = 'center';
+//         rowDiv.style.marginBottom = '10px'; // Space between rows
+        
+//         // Add 10 cash images to each row
+//         for (let col = 0; col < 10; col++) {
+//             const cashType = cashTypes[col % cashTypes.length]; // Cycle through 1-4
+//             const img = document.createElement('img');
+//             img.src = `Illustrations/${cashType}`;
+//             img.alt = 'Bolivar';
+//             img.style.width = '80px';
+//             rowDiv.appendChild(img);
+//         }
+        
+//         cashContainer.appendChild(rowDiv);
+//     }
+// }
+
 function generateCashImages() {
-    const cashContainer = document.querySelector('#cash-scroll-container');
-    cashContainer.innerHTML = '';
-    
-    const cashTypes = ['Cash_1.png', 'Cash_2.png', 'Cash_3.png', 'Cash_4.png'];
-    
-    // Create 90 rows
-    for (let row = 0; row < 90; row++) {
-        const rowDiv = document.createElement('div');
-        rowDiv.className = 'cash-row';
-        rowDiv.style.display = 'flex';
-        rowDiv.style.justifyContent = 'center';
-        rowDiv.style.marginBottom = '10px'; // Space between rows
-        
-        // Add 10 cash images to each row
-        for (let col = 0; col < 10; col++) {
-            const cashType = cashTypes[col % cashTypes.length]; // Cycle through 1-4
-            const img = document.createElement('img');
-            img.src = `Illustrations/${cashType}`;
-            img.alt = 'Bolivar';
-            img.style.width = '80px';
-            rowDiv.appendChild(img);
-        }
-        
-        cashContainer.appendChild(rowDiv);
-    }
+  const cashContainer = document.querySelector('#cash-scroll-container');
+  cashContainer.innerHTML = '';
+  
+  const cashTypes = ['Cash_1.png', 'Cash_2.png', 'Cash_3.png', 'Cash_4.png'];
+
+  const isMobile = window.innerWidth <= 400;
+  const imagesPerRow = isMobile ? 4 : 10;
+  const totalImages = 900;
+  const numRows = Math.ceil(totalImages / imagesPerRow);
+
+  let imageIndex = 0;
+
+  for (let row = 0; row < numRows; row++) {
+      const rowDiv = document.createElement('div');
+      rowDiv.className = 'cash-row';
+
+      for (let col = 0; col < imagesPerRow && imageIndex < totalImages; col++) {
+          const cashType = cashTypes[imageIndex % cashTypes.length];
+          const img = document.createElement('img');
+          img.src = `Illustrations/${cashType}`;
+          img.alt = 'Bolivar';
+          img.style.width = isMobile ? '80px' : '80px';
+          rowDiv.appendChild(img);
+          imageIndex++;
+      }
+
+      cashContainer.appendChild(rowDiv);
+  }
 }
+
+window.addEventListener('resize', () => {
+  generateCashImages();
+});
 
 scroller
     .setup({
