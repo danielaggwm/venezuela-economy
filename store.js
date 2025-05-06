@@ -1,8 +1,8 @@
 const salaries = {
-    executive: 458.20,
-    professional: 309.10,
-    operator: 195.10,
-    minimum: 3.50
+    executive: 531.00,
+    professional: 340.00,
+    operator: 217.00,
+    minimum: 1.53
 };
 
 let selectedSalary = null;

@@ -690,6 +690,7 @@ span {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 200;
     font-size: 1rem;
+    white-space: pre-line;
   }
 
 
@@ -852,3 +853,60 @@ span {
 
   }
   
+#info-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+}
+
+.info-icon {
+    width: 20px; 
+    height: auto;
+}
+
+#info-popup {
+    position: fixed;
+    bottom: 10%;
+    left: 52%;
+    transform: translateY(-50%) translateX(0%); 
+    background-color: #f5f3f0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    font-weight: 400;
+    display: none; 
+    border-radius: 5px; 
+    word-wrap: break-word; 
+    white-space: normal; 
+    max-width: 400px; 
+}
+
+#info-popup p {
+    font-size: 15px !important;
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0; 
+    padding: 5px; 
+    height: auto;
+    text-align: left !important; 
+    width: 90% !important;
+}
+
+#info-button:hover + #info-popup {
+    display: block;
+}
+
+@media (max-width: 400px) {
+    #info-popup {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5%;
+      max-width: 90vw;
+      padding: 12px;
+    }
+  
+    #info-popup p {
+      font-size: 14px !important;
+    }
+}

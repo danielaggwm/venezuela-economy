@@ -1,32 +1,5 @@
-const scroller = scrollama();
 
-// function generateCashImages() {
-//     const cashContainer = document.querySelector('#cash-scroll-container');
-//     cashContainer.innerHTML = '';
-    
-//     const cashTypes = ['Cash_1.png', 'Cash_2.png', 'Cash_3.png', 'Cash_4.png'];
-    
-//     // Create 90 rows
-//     for (let row = 0; row < 90; row++) {
-//         const rowDiv = document.createElement('div');
-//         rowDiv.className = 'cash-row';
-//         rowDiv.style.display = 'flex';
-//         rowDiv.style.justifyContent = 'center';
-//         rowDiv.style.marginBottom = '10px'; // Space between rows
-        
-//         // Add 10 cash images to each row
-//         for (let col = 0; col < 10; col++) {
-//             const cashType = cashTypes[col % cashTypes.length]; // Cycle through 1-4
-//             const img = document.createElement('img');
-//             img.src = `Illustrations/${cashType}`;
-//             img.alt = 'Bolivar';
-//             img.style.width = '80px';
-//             rowDiv.appendChild(img);
-//         }
-        
-//         cashContainer.appendChild(rowDiv);
-//     }
-// }
+const scroller = scrollama();
 
 function generateCashImages() {
   const cashContainer = document.querySelector('#cash-scroll-container');
