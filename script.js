@@ -149,3 +149,28 @@ profileScroller
     }, 400);
 });
 
+
+
+// info-popup
+document.addEventListener('DOMContentLoaded', function () {
+  const infoButton = document.getElementById('info-button');
+  const infoPopup = document.getElementById('info-popup');
+
+  // Only add click-based behavior for small screens
+  if (window.innerWidth <= 450) {
+      infoButton.addEventListener('click', function (e) {
+          e.stopPropagation();
+          infoPopup.style.display = (infoPopup.style.display === 'block') ? 'none' : 'block';
+      });
+
+      // Hide popup when clicking outside
+      document.addEventListener('click', function () {
+          infoPopup.style.display = 'none';
+      });
+
+      // Prevent popup from closing when clicking on it
+      infoPopup.addEventListener('click', function (e) {
+          e.stopPropagation();
+      });
+  }
+});
