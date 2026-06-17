@@ -7,7 +7,7 @@ function generateCashImages() {
   
   const cashTypes = ['Cash_1.png', 'Cash_2.png', 'Cash_3.png', 'Cash_4.png'];
 
-  const isMobile = window.innerWidth <= 400;
+  const isMobile = window.innerWidth <= 430;
   const imagesPerRow = isMobile ? 4 : 10;
   const totalImages = 900;
   const numRows = Math.ceil(totalImages / imagesPerRow);
